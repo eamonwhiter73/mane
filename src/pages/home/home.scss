@@ -1,0 +1,56 @@
+page-home {
+	.imagepost {
+		width: 100%;
+	}
+	
+	.postprofilelink {
+		position: absolute;
+		right: 0;
+		display: inline-block;
+		margin-right: 4px;
+	}
+
+	.postprofilepic {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+  }
+
+  .imageparent {
+  	width:10vw;
+    height:10vw;
+    border-radius:50%;
+    overflow:hidden;
+    display: inline-block;
+    margin-left: 4px;	
+	}
+
+  .feedtoptextcontainer {
+  	height: 44px;
+  	display: flex;
+		align-items: center; /* align vertical */
+  }
+
+	.postusername {
+  	display: inline-block;
+  	margin-left: 4px;
+	}
+
+	.input-wrapper {
+		padding: 0;
+		margin: 0;
+	}
+
+	.item-inner {
+		padding: 0px !important;
+	}
+
+	.label-ios {
+		margin: 0;
+	}
+
+	.marginstatus {
+		margin-top: 20px;
+	}
+}
