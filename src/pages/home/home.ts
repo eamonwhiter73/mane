@@ -28,7 +28,6 @@ export class HomePage {
 	    .post('http://maneapp.eamondev.com/more-items.php', data)
 	      .subscribe(res => {
 	      	console.log('getInitialImages completed ***********')
-	      	console.log(JSON.stringify(res));
 	        for(let i=0; i<res.json().length; i++) {
 	        	this.totalCount+=1;
 	  				this.items.push(res.json()[i]);
