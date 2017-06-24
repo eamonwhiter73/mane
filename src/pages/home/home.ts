@@ -25,7 +25,7 @@ export class HomePage {
 	  data.append('page', this.totalCount.toString());
 	  console.log("constructed");
  		this.http
-	    .post('http://192.168.1.131:8888/maneappback/more-items.php', data)
+	    .post('http://maneapp.eamondev.com/more-items.php', data)
 	      .subscribe(res => {
 	        for(let i=0; i<res.json().length - 1; i++) {
 	        	this.totalCount+=1;
@@ -49,7 +49,7 @@ export class HomePage {
 		  data.append('page', this.totalCount.toString());
 
 		  this.http
-		    .post('http://192.168.1.131:8888/maneappback/more-items.php', data)
+		    .post('http://maneapp.eamondev.com/more-items.php', data)
 		      .subscribe(res => {
 		      	//console.log(JSON.stringify(res));
 		      	//let response = JSON.stringify(res);
@@ -85,7 +85,7 @@ export class HomePage {
 		  console.log("constructed");
 
 		  this.http
-		    .post('http://192.168.1.131:8888/maneappback/more-items-refresher.php', data)
+		    .post('http://maneapp.eamondev.com/more-items-refresher.php', data)
 		      .subscribe(res => {
 		      	console.log('getInitialImages completed ***********')
 
