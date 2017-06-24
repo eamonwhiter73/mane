@@ -1,15 +1,18 @@
 <ion-content no-padding>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
 
  <ion-list class="marginstatus" no-padding>
    <ion-item *ngFor="let i of items" no-padding no-lines>
     <div class="feedtoptextcontainer">
       <div class="imageparent">
-        <img class="postprofilepic" src="data:image/png;base64,{{i}}"/>
+        <img class="postprofilepic" src="data:image/png;base64,{{i}}">
       </div>
       <h2 class="postusername">Ed Bundy</h2>
       <h4 class="postprofilelink">@edbundyhair</h4>
     </div>
-    <img class="imagepost" src="data:image/png;base64,{{i}}"/>
+    <img class="imagepost" src="data:image/png;base64,{{i}}">
    </ion-item>
  </ion-list>
 
